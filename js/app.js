@@ -24,7 +24,8 @@ if(this.level=="Mid-Senior"){
 
 if(this.level=="Junior"){ 
     this.selary= Math.random() * (1000 - 500) + 500;
-     document.write(this.fullName+" " + this.selary + "<br>");
+    this.salary=this.salary-(this.salary*.075);
+    document.write(this.fullName+" " + this.selary + "<br>");
     }
   
 }
