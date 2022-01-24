@@ -9,7 +9,9 @@ function Employee(employeeId,fullName,department,level,imageUrl,salary)
 }
 Employee.prototype.salary=function(){
     if(this.level=="Senior"){ 
+       
         this.selary=Math.random() * (2000 - 1500) + 1500;
+        this.salary=this.salary-(this.salary*.075);
         document.write(this.fullName+" " + this.selary + "<br>");
    
 }
@@ -17,7 +19,7 @@ Employee.prototype.salary=function(){
 if(this.level=="Mid-Senior"){ 
  
     this.selary = Math.random() * (1500 - 1000) + 1000;
-   
+    this.salary=this.salary-(this.salary*.075);
     document.write(this.fullName+" " + this.selary + "<br>");
 }
 
