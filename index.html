@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,26 +12,60 @@
 </head>
 <body>
     <header> 
-        <a href="#"> home </a>
         <a href="./accounting.html"> accounting </a>
+        <a href="#"> home </a>
+        
     </header>
     <main>
+       
+<form id="form"> 
+    <fieldset>
+        <legend> HR-management-system</legend>
+        <label for="fullName"> Full name</label>
+        <input type="text" id="fullName" name="fullName">
+
+        <label for="imgUrl"> img Url</label>
+        <input type="text" id="imgUrl" name="imgUrl">
+       
+        <label for="Department"> Department </label>
+        <select name="Department" id="Department">
+            <option value="Administration">Administration</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Development">Development</option>
+            <option value="Finance">Finance</option>
+        </select>
+
+
+        <label for="level"> level </label>
+        <select name="level" id="level">
+            <option value="Junior">Junior</option>
+            <option value="Mid-Senior">Mid-Senior</option>
+            <option value="Senior">Senior</option>
+            
+        </select>
+<input type="submit" id="submit"> 
+</fieldset>
+</form>
+
+<section id="continer">
+    
+</section>
 
     </main>
     <footer>
         <footer>
   
        
-            <div></div><a href="facebook.com">facebook</a></div>
+            <div><a href="facebook.com">facebook</a></div>
              <div> all rights reserved. copyright © 2022</div>
              <div><a href="twitter.com">twitter</a> </div>
            
         
         
          </footer>
-         
+
     </footer>
-    <script src="js/app.js">
+    <script src="js/app.js"> 
     </script>
 </body>
 </html>
