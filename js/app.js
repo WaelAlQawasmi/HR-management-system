@@ -75,7 +75,7 @@ function idGenrator()
 }
 
 function creatCard(name,imgUrl,level,Department ,id){
-    var continer=document.getElementById("continer");
+    var continer=document.getElementById(Department);
    let div= document.createElement('div');
    let contant= document.createElement('div');
    let img= document.createElement('img');
@@ -89,5 +89,4 @@ contant.textContent=` Name:${name} -Level:${level} Department:${Department}-ID: 
 
 }
 form.addEventListener('submit', addPerson);
-
 
