@@ -51,8 +51,7 @@ omarZaid.salary();
 const ranaSaleh = new Employee(1004,"Rana Saleh","Development","Junior","./img/Rana .png");
 ranaSaleh.salary();
 
-const hadiAhmad = new Employee(1004,"Hadi Ahmad","Finance","Mid-Senior","./img/Hadi .png",);
-hadiAhmad.salary();
+
 
 ///////////////////////////////////////////
 var continer=document.getElementById("continer");
@@ -89,3 +88,6 @@ contant.textContent=` Name:${name} -Level:${level} Department:${Department}-ID: 
 
 }
 form.addEventListener('submit', addPerson);
+
+const hadiAhmad = new Employee(1004,"Hadi Ahmad","Finance","Mid-Senior","./img/hadi.png");
+hadiAhmad.salary();
