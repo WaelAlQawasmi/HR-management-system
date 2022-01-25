@@ -38,7 +38,7 @@ const lanaAli = new Employee(1001,"Lana Ali","Finance","Senior","./img/Lana.png"
 lanaAli.salary();
 
 const tamaraAyoub = new Employee(1002,"Tamara Ayoub","Marketing","Senior","./img/tamar.png");
-lanaAli.salary();
+tamaraAyoub.salary();
 
 const safiWalid = new Employee(1003,"Safi Walid","Administration","Mid-Senior","./img/safi.png");
 safiWalid.salary();
