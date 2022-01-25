@@ -51,7 +51,8 @@ omarZaid.salary();
 const ranaSaleh = new Employee(1004,"Rana Saleh","Development","Junior","./img/Rana .png");
 ranaSaleh.salary();
 
-
+const hadiAhmad = new Employee(1004,"Hadi Ahmad","Finance","Mid-Senior","./img/Hadi .png");
+hadiAhmad.salary();
 
 ///////////////////////////////////////////
 var continer=document.getElementById("continer");
@@ -74,7 +75,7 @@ function idGenrator()
 }
 
 function creatCard(name,imgUrl,level,Department ,id){
-    var continer=document.getElementById("continer");
+    var continer=document.getElementById(Department);
    let div= document.createElement('div');
    let contant= document.createElement('div');
    let img= document.createElement('img');
@@ -88,6 +89,3 @@ contant.textContent=` Name:${name} -Level:${level} Department:${Department}-ID: 
 
 }
 form.addEventListener('submit', addPerson);
-
-const hadiAhmad = new Employee(1004,"Hadi Ahmad","Finance","Mid-Senior","./img/hadi.png");
-hadiAhmad.salary();
