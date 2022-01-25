@@ -89,4 +89,3 @@ contant.textContent=` Name:${name} -Level:${level} Department:${Department}-ID: 
 
 }
 form.addEventListener('submit', addPerson);
-
