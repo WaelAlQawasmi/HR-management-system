@@ -48,10 +48,10 @@ safiWalid.salary();
 const omarZaid = new Employee(1004,"Omar Zaid","Development","Senior","./img/Omar .png");
 omarZaid.salary();
 
-const ranaSaleh = new Employee(1004,"Rana Saleh","Development","Junior","./img/Rana .png");
+const ranaSaleh = new Employee(1005,"Rana Saleh","Development","Junior","./img/Rana .png");
 ranaSaleh.salary();
 
-const hadiAhmad = new Employee(1004,"Hadi Ahmad","Finance","Mid-Senior","./img/Hadi .png");
+const hadiAhmad = new Employee(1006,"Hadi Ahmad","Finance","Mid-Senior","./img/Hadi .png");
 hadiAhmad.salary();
 
 ///////////////////////////////////////////
@@ -68,11 +68,44 @@ function addPerson(event){
   creatCard(name,imgUrl,level,Department,idGenrator());
 }
 
-
+var Uid=1007;
 function idGenrator()
-{let id =Math.floor(Math.random() * 10000);
-    return id;
+{
+    return Uid++;
 }
+
+
+
+function salaryNewEmployy(level) {
+    let SelaryNew;
+  
+     if(level=="Senior"){ 
+         
+        
+         SelaryNew=Math.round(Math.random() * (2000 - 1500) + 1500);
+       
+    
+ }
+ 
+ if(level=="Mid-Senior"){ 
+  
+     SelaryNew = Math.round(Math.random() * (1500 - 1000) + 1000);
+     // this.salary=this.salary-this.salary*.075;
+   
+     
+  
+ }
+ 
+ 
+ if(level=="Junior"){ 
+     SelaryNew= Math.round(Math.random() * (1000 - 500) + 500);
+  
+     }
+    
+   return SelaryNew;
+ }  
+ 
+ 
 
 function creatCard(name,imgUrl,level,Department ,id){
     var continer=document.getElementById(Department);
@@ -83,7 +116,8 @@ function creatCard(name,imgUrl,level,Department ,id){
    img.setAttribute('src',imgUrl);
    let card= continer.appendChild(div);
 card.appendChild(contant);
-contant.textContent=` Name:${name} -Level:${level} Department:${Department}-ID: ${id}`;
+let ssLry =salaryNewEmployy(level);
+contant.textContent=` Name:${name} -Level:${level} Department:${Department}-ID: ${id}-salary ${ssLry}`;
     div.setAttribute('class','card');
   
 
