@@ -155,13 +155,13 @@ contant.textContent=` Name:${name} -Level:${level} Department:${Department}-ID: 
 
 function localStorages(arr){
     let jeson=JSON.stringify(arr);
-    localStorage.setItem("employy",jeson);
+    localStorage.setItem("employys",jeson);
 }
 
 
 function FromLocalStorages(){
 
-   let data=  JSON.parse(localStorage.getItem("employy")) ;
+   let data=  JSON.parse(localStorage.getItem("employys")) ;
    if(data!=null){
    for (const iterator of data) {
     creatCard(iterator.fullName,iterator.imageUrl,iterator.level,iterator.department ,iterator.employeeId)

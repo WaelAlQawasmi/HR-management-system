@@ -1,6 +1,6 @@
 function FromLocalStorages(){
 
-    let data=  JSON.parse(localStorage.getItem("employy")) ;
+    let data=  JSON.parse(localStorage.getItem("employys")) ;
   
     
      return data;
