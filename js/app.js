@@ -22,7 +22,7 @@ if(this.level=="Mid-Senior"){
  
     this.selary = Math.round(Math.random() * (1500 - 1000) + 1000);
     // this.salary=this.salary-this.salary*.075;
-  
+    this.salary=this.salary-this.salary*.075;
     creatCard(this.fullName,this.imageUrl,this.level,this.department,this.employeeId);
  
 }
@@ -112,7 +112,7 @@ function salaryNewEmployy(level) {
    
 }
 
-if(this.level=="Mid-Senior"){ 
+if(level=="Mid-Senior"){ 
  
     SelaryNew = Math.round(Math.random() * (1500 - 1000) + 1000);
     // this.salary=this.salary-this.salary*.075;
